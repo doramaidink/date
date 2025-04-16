@@ -1,0 +1,14 @@
+@media(max-width: 740px){
+    .main-wheel{
+        width:  calc(var(--size) * 1.2);
+        height:  calc(var(--size) * 1.2);
+    }
+    .wheel{
+        width: calc(var(--size)*1);
+    height: calc(var(--size)*1);
+    }
+    .main-wheel::after{
+        width: calc(var(--size) * 1);
+    height: calc(var(--size) * 1);
+    }
+}

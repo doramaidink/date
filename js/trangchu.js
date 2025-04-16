@@ -60,12 +60,12 @@
           rotate(${rotate*index}deg)
           skewY(-${skewY}deg)`;
           itemGift.innerHTML = `
-          <h1 class = "text-item ${index % 2 == 0 && 'even'} "
+          <h2 class = "text-item ${index % 2 == 0 && 'even'} "
           style="transform: skewY(${skewY}deg) 
           rotate(${rotate / 2}deg)"
           >
           <b> ${item.txtName}<b>
-          </h1>
+          </h2>
           `;
           wheel.appendChild(itemGift);
         });
@@ -85,6 +85,7 @@
             list.push({
                 ...item,
                 index,
+            
             });
         });
         return list[0];
