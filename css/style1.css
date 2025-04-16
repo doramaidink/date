@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal{
+    margin-top: 10rem;
+    width: 40rem;
+    height: 20rem;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:4rem;
+    text-align: center;
+    background-color: pink;
+}
+.heading h1{
+    font-size: 40px;
+    color: rgb(255, 17, 0);
+    margin-top: 0.5rem;
+}
+.content{
+    background-color: rgba(230, 33, 11, 0.427) ;
+}
+.tieude{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    height: 10rem;
+}
+.tieude h3{
+    padding-top: 2rem;
+    font-size: 30px;
+    color: rgb(255, 249, 192);
+}
+.tieude img{
+    width: 5rem;
+    height: 5rem;
+    margin-top: 2rem;
+}
+.button{
+    display: flex;
+}
+.btn_tuchoi img{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+.btn_tuchoi button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    position: absolute;
+   margin-top: 1rem;
+   margin-left: 1.5rem;
+}
+.btn_tuchoi{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 15rem;
+    height: 6rem;
+    margin: 2.5rem;
+    background-color: rgba(106, 11, 230, 0.24);
+    display: flex;
+}
+.btn_dongy{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 15rem;
+    height: 6rem;
+    margin: 2.5rem;
+    background-color: rgba(106, 11, 230, 0.24);
+    display: flex;
+}
+.btn_dongy button{
+    border: none;
+    background: none;
+    font-size: 20px;
+    position: absolute;
+   margin-top: 1rem;
+   margin-left: 0.5rem;
+}
+.btn_dongy img{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 6rem;
+}
+.btn_tuchoi.active {
+   width: 30rem;
+   font-size: 24px;
+}
+.btn_tuchoi.active button {
+    font-size: 40px;
+    margin-left: 6rem;
+    margin-top: -0.1rem;
+ }
+ 

@@ -1,0 +1,136 @@
+
+:root{
+    --boder--color-1: linear-gradient(
+        135deg,
+        #FF1493 14.32%,
+        #EE1289 25.04%,
+        #CD1076 32.44%,
+        #8B0A50 12.22%,
+        #FF69B4 39.48%,
+        #FF6EB4 46.21%,
+        #EE6AA7 77.44%,
+        #CD6090 99.06%,
+        #8B3A62 92.01%,
+        #FFC0CB 50.22%,
+        #FFB5C5 72.02%,
+        #EEA9B8 22.55%,
+        #CD919E 32.50%,
+        #8B636C 82.90%,
+        #FFB6C1 39.83%,
+        #FFAEB9 57.65%
+    );
+    --border-color-2: linear-gradient(
+        233.36deg,
+        #00435e 35.38%,
+        #000604 94.78%
+    );
+    --size: 400px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+marquee img{
+width: 5rem;
+}
+.img1{
+    margin-right: 3rem;
+}
+html,
+body{
+    height: 100%;
+    font-size: 16px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-wheel{
+    position: relative;
+    width:  calc(var(--size) * 2.2);
+    height:  calc(var(--size) * 2.2);
+    border-radius: 50%;
+    background-image: var(--border-color-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-wheel::after{
+    content: '';
+    position: absolute;
+    width: calc(var(--size) * 2.2);
+    height: calc(var(--size) * 2.2);
+    border-radius: 50%;
+    background-image: var(--boder--color-1);
+}
+.wheel{
+    list-style: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: calc(var(--size)*2);
+    height: calc(var(--size)*2);
+    border-radius: 50%;
+    background-color: white;
+    transition: cubic-bezier(0.075,0.82,0.165,1) 7s;
+}
+.btn-start{
+    padding:  1rem 2rem;
+    margin-top: 2rem;
+    border: 2px solid black;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+
+}
+.btn-start:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+li {
+    overflow: hidden;
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    transform-origin: 0% 100%;
+}
+.text-item{
+    display: block;
+    position: absolute;
+    left: -100%;
+    height: 200%;
+    width: 200%;
+    text-align: center;
+    padding-top: 1.7rem;
+    color: black;
+    background-color: rgba(251, 61, 9, 0.607);
+}
+.text-item.even{
+    background-color: rgba(255, 166, 0, 0.641);
+}
+.text-item >b{
+    display: inline-block;
+    word-break: break-word;
+    max-width: 20%;
+}
+.icon-arrow{
+    position: absolute;
+    width: 80px;
+    top: -25px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.msg{
+    margin-top: 2rem;
+}
